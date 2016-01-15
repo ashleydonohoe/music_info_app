@@ -7,6 +7,10 @@ app.controller('MainController', ['$scope', function($scope) {
 		genre: "Jazz",
 		number_tracks: 12,
 		runtime: 56
-	}
+	};
+
+	$scope.increase = function(index) {
+		$scope.albums[index].count += 1;
+	};
 
 }]);

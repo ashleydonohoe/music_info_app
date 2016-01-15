@@ -26,6 +26,10 @@
           <strong>Number of Tracks</strong>: {{ album.number_tracks }} tracks<br>
           <strong>Runtime</strong>: {{ album.runtime }} minutes</p>
         </div>
+        <div class="col-md-12">
+          <button class="like btn btn-default center-block" ng-click"increase($index)">Like This Album</button>
+          <p class="text-center"><span class="count"> {{ album.count }} <p>
+        </div>
       </section>
     </div>
     <script src="js/app.js"></script>
