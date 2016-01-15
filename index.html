@@ -14,8 +14,16 @@
         </div>
       </header>
       <section class="album row" ng-controller="MainController">
-        <div class="col-md-offset-3">
-          <img ng-src="{{ album.cd_img }}">
+        <div class="col-md-12">
+          <img class="center-block" ng-src="{{ album.cd_img }}">
+          <h2 class="text-center">{{ album.title }}</h2>
+          <h3 class="text-center">{{ album.artist }}</h3>
+        </div>
+        <div class="col-md-12">
+          <p><strong>Genre</strong>: {{ album.genre }}<br>
+          <strong>Release Date</strong>: {{ album.release_date | date: 'mediumDatex' }} <br>
+          <strong>Number of Tracks</strong>: {{ album.number_tracks }} tracks<br>
+          <strong>Runtime</strong>: {{ album.runtime }} minutes</p>
         </div>
       </section>
     </div>
