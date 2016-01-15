@@ -1,6 +1,7 @@
 <!doctype html>
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link href='https://fonts.googleapis.com/css?family=Roboto:500,300,700,400' rel='stylesheet' type='text/css'>
     <link href="css/styles.css" rel="stylesheet" />
@@ -13,7 +14,7 @@
           <h1 class="navbar-brand">Your Favorite Music</h1>
         </div>
       </header>
-      <section class="album row" ng-controller="MainController">
+      <section class="row" ng-controller="MainController">
         <div class="col-md-12">
           <img class="center-block" ng-src="{{ album.cd_img }}">
           <h2 class="text-center">{{ album.title }}</h2>
@@ -21,7 +22,7 @@
         </div>
         <div class="col-md-12">
           <p><strong>Genre</strong>: {{ album.genre }}<br>
-          <strong>Release Date</strong>: {{ album.release_date | date: 'mediumDatex' }} <br>
+          <strong>Release Date</strong>: {{ album.release_date | date: 'mediumDate' }} <br>
           <strong>Number of Tracks</strong>: {{ album.number_tracks }} tracks<br>
           <strong>Runtime</strong>: {{ album.runtime }} minutes</p>
         </div>
