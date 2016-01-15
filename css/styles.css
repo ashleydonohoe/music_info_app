@@ -1,0 +1,16 @@
+body {
+	background-color: #4ECDC4;
+}
+
+.container {
+	width: 100%;
+}
+
+header,
+section {
+	background-color: #FDE3A7;
+}
+
+.navbar-brand {
+	font-size: 3em;
+}
