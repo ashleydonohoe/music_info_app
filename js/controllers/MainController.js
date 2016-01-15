@@ -6,11 +6,8 @@ app.controller('MainController', ['$scope', function($scope) {
 		release_date: new Date(2015, 05, 08),
 		genre: "Jazz",
 		number_tracks: 12,
-		runtime: 56
-	};
-
-	$scope.increase = function(index) {
-		$scope.albums[index].count += 1;
+		runtime: 56,
+		count: 0
 	};
 
 }]);
